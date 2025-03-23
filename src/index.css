@@ -3,3 +3,10 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  font-family: "Oswald", sans-serif;
+  background: linear-gradient(135deg, #0f0620, #5a189a, #9d4edd);
+  color: white;
+  height: 100vh;
+  text-align: center;
+}

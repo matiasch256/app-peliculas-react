@@ -1,1 +1,116 @@
+.container {
+  max-width: 80vw;
+  margin: 0 auto;
+  padding: 20px;
+}
 
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  padding: 10px;
+  width: 70%;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 5px;
+  background: #9d4edd;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #5a189a;
+}
+
+/* CARDS */
+
+.movie-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.movie-card {
+  background: #1a1a1a;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Mantiene el botón siempre abajo */
+  height: 100%; /* Mantiene todas las tarjetas del mismo tamaño */
+}
+
+.movie-card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+}
+
+.movie-card p {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.movie-poster {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+/* Descripción de la película */
+.movie-overview {
+  min-height: 60px; /* Altura mínima */
+  max-height: 60px; /* Altura máxima inicial */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* Máximo 3 líneas */
+  line-clamp: 3; /* Máximo 3 líneas */
+  -webkit-box-orient: vertical;
+  transition: max-height 0.3s ease-in-out;
+}
+
+.movie-overview.expanded {
+  max-height: 500px; /* Expande la descripción al hacer clic */
+  -webkit-line-clamp: unset;
+  line-clamp: unset;
+}
+
+/* Botón para ver más */
+.toggle-button {
+  background: none;
+  border: none;
+  color: #9d4edd;
+  cursor: pointer;
+  margin-top: auto; /* Empuja el botón hacia abajo */
+  font-size: 1rem;
+}
+
+.toggle-button:hover {
+  color: #5a189a;
+}
+
+.movie-info {
+  flex-grow: 1; /* Hace que la descripción ocupe el espacio disponible */
+  display: flex;
+  flex-direction: column;
+}
