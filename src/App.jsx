@@ -50,8 +50,10 @@ export const App = () => {
       </form>
 
       {movies.length > 0 ? (
+        //Contenedor de todas las cartas de las películas
         <div className="movie-list">
           {movies.map((movie) => (
+            //Carta de una película
             <div className="movie-card" key={movie.id}>
               <img
                 className="movie-poster"

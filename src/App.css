@@ -97,12 +97,13 @@ button:hover {
 
 /* Botón para ver más */
 .toggle-button {
-  background: none;
   border: none;
-  color: #9d4edd;
+  background-color: #9d4edd;
   cursor: pointer;
   margin-top: auto; /* Empuja el botón hacia abajo */
   font-size: 1rem;
+  padding: 10px;
+  transition: color 0.2s;
 }
 
 .toggle-button:hover {
