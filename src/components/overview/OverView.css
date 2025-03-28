@@ -1,0 +1,91 @@
+.overview-container {
+  z-index: 1;
+  max-width: 80vw;
+  height: 90vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 20px;
+}
+.overview-poster {
+  width: 225px;
+  height: auto;
+  object-fit: contain;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.overview-title {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.7rem;
+  margin-top: 20px;
+  text-align: left;
+  padding-left: 30px;
+  font-weight: bold;
+  display: inline;
+}
+
+.overview-description {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  text-align: left;
+  font-weight: normal;
+  padding-left: 30px;
+}
+
+.overview-content {
+  flex: 1; /* Ocupa el espacio restante */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centra el texto verticalmente */
+}
+
+.back-button-container {
+  display: flex;
+  flex: end;
+  justify-content: center; /* Centra el botón horizontalmente */
+  align-items: flex-end;
+  height: 100%; /* Asegura que ocupe todo el alto del contenedor */
+  z-index: 2;
+}
+.back-button {
+  display: block; /* Hace que el botón esté en una nueva línea */
+
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+  width: 200px;
+}
+
+.back-button:hover {
+  background-color: #333;
+  color: white;
+  transform: scale(
+    1.05
+  ); /* Aumenta ligeramente el tamaño del botón al pasar el mouse */
+  transition: background 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.overview-geners {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  text-align: left;
+  font-weight: normal;
+  padding-left: 30px;
+  margin-top: 10px;
+}
+.overview-actors {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  text-align: left;
+  font-weight: normal;
+  padding-left: 30px;
+  margin-top: 10px;
+}
